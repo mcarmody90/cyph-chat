@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41aa169dee028bd8694516b5060ef653",
+    "revision": "b451b217221d9fa6ceb9a1a1b7e15ede",
     "url": "/cyph-chat/index.html"
   },
   {
-    "revision": "9fcc681ea2ff533e1ea5",
-    "url": "/cyph-chat/static/css/main.59c0522f.chunk.css"
+    "revision": "f3a9c23b7b5d374dc23c",
+    "url": "/cyph-chat/static/css/main.484e669a.chunk.css"
   },
   {
     "revision": "224981919798f02da85c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cyph-chat/static/js/2.9e911c77.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9fcc681ea2ff533e1ea5",
+    "revision": "f3a9c23b7b5d374dc23c",
     "url": "/cyph-chat/static/js/main.cc3d69b7.chunk.js"
   },
   {
