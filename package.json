@@ -2,6 +2,7 @@
   "name": "cyphchat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mcarmody90.github.io/cyph-chat/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -16,7 +17,6 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "homepage": "https://mcarmody90.github.io/cyph-chat/",
     "predeploy": "yarn build",
     "start": "react-scripts start",
     "build": "react-scripts build",
