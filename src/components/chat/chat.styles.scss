@@ -36,7 +36,7 @@ textarea {
 
   &__text,
   &__key {
-    border-radius: 17px;
+    border-radius: 100px;
     background-color: #303031;
     border: none;
     color: white;
@@ -153,5 +153,39 @@ textarea {
 
   .chat__container .chat__bubble {
     max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chat {
+    height: 85vh;
+
+    &__bubble {
+      max-width: 80% !important;
+    }
+
+    &__text,
+    &__key {
+      width: 100%;
+      margin: 10px;
+      height: 50px;
+    }
+
+    &__submit {
+      height: 50px;
+      width: 50px;
+      right: 11px;
+      top: 10px;
+    }
+    &__key-submit {
+      height: 50px;
+      width: 50px;
+      right: 11px;
+      top: 80px;
+    }
+
+    &__account {
+      display: none;
+    }
   }
 }
