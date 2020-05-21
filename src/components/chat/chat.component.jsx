@@ -50,6 +50,7 @@ export default class Chat extends Component {
     this.setState({
       [name]: value
     });
+    this.state.key.length ? console.log('hi') : this.setState({ chats: this.state.encryptedChats })
   }
 
   async handleSubmit(event) {
@@ -79,6 +80,7 @@ export default class Chat extends Component {
 
     if(this.state.key) {    
       for(let i = 0; i < newChats.length; i++) {
+        ((CryptoJS.AES.decrypt(newChats[i].content, this.state.key)).toString(CryptoJS.enc.Utf8)) ? console.log('yes') : console.log('no');
         if ((CryptoJS.AES.decrypt(newChats[i].content, this.state.key)).toString(CryptoJS.enc.Utf8)) {
           newChats[i].content = (CryptoJS.AES.decrypt(newChats[i].content, this.state.key)).toString(CryptoJS.enc.Utf8);
         }
@@ -117,7 +119,7 @@ export default class Chat extends Component {
           })}
         </div>
         <form onSubmit={this.handleSubmit} autoComplete="off" className="chat__form">
-          <textarea placeholder="Type a message..." className="chat__text" name="content" onChange={this.handleChange} value={this.state.content}></textarea>
+          <input placeholder="Type a message..." className="chat__text" name="content" onChange={this.handleChange} value={this.state.content}></input>
           <input placeholder="Enter a key..." className="chat__key" type='text' name='key' onChange={this.handleChange} value={this.state.key} />
           <button type="submit" className="chat__submit"></button>
           <button className='chat__key-submit' onClick={this.decipherText}></button>
