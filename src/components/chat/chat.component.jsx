@@ -49,8 +49,9 @@ export default class Chat extends Component {
     const { value, name } = e.target;
     this.setState({
       [name]: value
-    });
-    this.state.key.length ? console.log('hi') : this.setState({ chats: this.state.encryptedChats })
+    }, () => this.state.key.length ? 
+      null : 
+      this.setState({ chats: this.state.encryptedChats }));
   }
 
   async handleSubmit(event) {
