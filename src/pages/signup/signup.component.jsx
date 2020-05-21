@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { signup, signInWithGoogle, signInWithGitHub } from '../../helpers/auth';
+import './signup.styles.scss';
 
 export default class SignUp extends Component {
   constructor(props) {
@@ -50,32 +51,32 @@ export default class SignUp extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <h1>
-            Sign Up to
-          <Link to="/">Chatty</Link>
+      <div className='signup'>
+        <form className='signup__form' onSubmit={this.handleSubmit}>
+          <h1 className='signup__title'>
+            Sign Up to{' '}
+            <Link className='signup__title-link' to="/">CyphChat</Link>
           </h1>
-          <p>Fill in the form below to create an account.</p>
+          <p className="signup__subtitle">Fill in the form below to create an account.</p>
           <div>
-            <input placeholder="Email" name="email" type="email" onChange={this.handleChange} value={this.state.email}></input>
+            <input className="signup__input" placeholder="Email" name="email" type="email" onChange={this.handleChange} value={this.state.email}></input>
           </div>
           <div>
-            <input placeholder="Password" name="password" onChange={this.handleChange} value={this.state.password} type="password"></input>
+            <input className="signup__input" placeholder="Password" name="password" onChange={this.handleChange} value={this.state.password} type="password"></input>
           </div>
           <div>
             {this.state.error ? <p>{this.state.error}</p> : null}
-            <button type="submit">Sign up</button>
-            <p>Or</p>
-            <button onClick={this.googleSignIn} type="button">
-              Sign up with Google
+            <button className="signup__button signup__button--submit" type="submit">Sign up</button>
+            <p>Or sign up with</p>
+            <button className="signup__button signup__button--google" onClick={this.googleSignIn} type="button">
+              <i class="fab fa-google"></i> Google
             </button>
-            <button type="button" onClick={this.githubSignIn}>
-              Sign up with GitHub
+            <button className="signup__button signup__button--github" type="button" onClick={this.githubSignIn}>
+              <i class="fab fa-github"></i> GitHub
             </button>
           </div>
           <hr></hr>
-          <p>Already have an account? <Link to="/login">Login</Link></p>
+          <p>Already have an account? <Link className='signup__link' to="/login">Login</Link></p>
         </form>
       </div>
     )

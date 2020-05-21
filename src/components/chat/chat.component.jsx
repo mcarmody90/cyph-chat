@@ -120,6 +120,7 @@ export default class Chat extends Component {
           })}
         </div>
         <form onSubmit={this.handleSubmit} autoComplete="off" className="chat__form">
+          {/* <span contentEditable className='chat__text' role='textbox' name='content' onChange={this.handleChange} value={this.state.content}></span> */}
           <input placeholder="Type a message..." className="chat__text" name="content" onChange={this.handleChange} value={this.state.content}></input>
           <input placeholder="Enter a key..." className="chat__key" type='text' name='key' onChange={this.handleChange} value={this.state.key} />
           <button type="submit" className="chat__submit"></button>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { signin, signInWithGoogle, signInWithGitHub } from "../../helpers/auth";
+import './login.styles.scss';
 
 export default class Login extends Component {
   constructor() {
@@ -50,24 +51,22 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="login">
         <form
-          className="mt-5 py-5 px-5"
+          className="login__form"
           autoComplete="off"
           onSubmit={this.handleSubmit}
         >
-          <h1>
-            Login to
-            <Link className="title ml-2" to="/">
-              Chatty
-            </Link>
+          <h1 className='login__title'>
+            Login to{' '}
+            <Link className='login__title-link' to="/">CyphChat</Link>
           </h1>
-          <p className="lead">
+          <p className="login__subtitle">
             Fill in the form below to login to your account.
           </p>
-          <div className="form-group">
+          <div className="login__form-group">
             <input
-              className="form-control"
+              className="login__input"
               placeholder="Email"
               name="email"
               type="email"
@@ -75,9 +74,9 @@ export default class Login extends Component {
               value={this.state.email}
             />
           </div>
-          <div className="form-group">
+          <div className="login__form-group">
             <input
-              className="form-control"
+              className="login__input"
               placeholder="Password"
               name="password"
               onChange={this.handleChange}
@@ -85,22 +84,22 @@ export default class Login extends Component {
               type="password"
             />
           </div>
-          <div className="form-group">
+          <div className="login__form-group">
             {this.state.error ? (
               <p className="text-danger">{this.state.error}</p>
             ) : null}
-            <button className="btn btn-primary px-5" type="submit">Login</button>
+            <button className="login__button login__button--submit" type="submit">Login</button>
           </div>
           <p>You can also log in with any of these services</p>
-          <button className="btn btn-danger mr-2" type="button" onClick={this.googleSignIn}>
-            Sign in with Google
+          <button className="login__button login__button--google" type="button" onClick={this.googleSignIn}>
+            <i class="fab fa-google"></i> Google
           </button>
-          <button className="btn btn-secondary" type="button" onClick={this.githubSignIn}>
-            Sign in with GitHub
+          <button className="login__button login__button--github" type="button" onClick={this.githubSignIn}>
+            <i class="fab fa-github"></i> GitHub
           </button>
-          <hr />
+          <hr></hr>
           <p>
-            Don't have an account? <Link to="/signup">Sign up</Link>
+            Don't have an account? <Link className='login__link' to="/signup">Sign up</Link>
           </p>
         </form>
 

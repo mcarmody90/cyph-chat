@@ -1,22 +1,22 @@
 .home {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   text-align: center;
 
   &__title {
-    border: 1px solid red;
     font-size: 3rem;
     margin-bottom: 0;
+
+    span {
+      color: #1055AF;
+    }
   }
 
   &__subtitle {
-    border: 1px solid green;
     font-size: 1.5rem;
   }
 
   &__links {
-    border: 1px solid purple;
     display: flex;
     justify-content: center;
   }

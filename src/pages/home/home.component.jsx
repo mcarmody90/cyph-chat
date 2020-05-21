@@ -8,7 +8,7 @@ export default class HomePage extends Component {
       <div className="home__container">
         <section>
             <div className="home">
-              <h1 className="home__title">Welcome to CyphChat</h1>
+              <h1 className="home__title">Welcome to <span>CyphChat</span></h1>
               <p className="home__subtitle">A chat application that allows you to encrypt and decrypt messages</p>
               <div className="home__links">
                 <Link className="home__btn" to="/signup">Create New Account</Link>

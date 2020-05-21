@@ -36,25 +36,35 @@ textarea {
 
   &__text,
   &__key {
-    height: 36px;
-    border-radius: 100px;
+    border-radius: 17px;
     background-color: #303031;
     border: none;
     color: white;
     font-size: 14px;
     padding: 9px;
+    padding-left: 15px;
     outline: none;
     font-family: inherit;
   }
 
   &__text {
+    display: inline-block;
     width: 70%;
     margin-right: 10px;
     padding-right: 40px;
+    max-height: 200px;
+    overflow: hidden;
+    resize: vertical;
+
+    &[contenteditable]:empty::before {
+      content: 'Type a message...';
+      color: gray;
+    }
   }
 
   &__key {
     width: calc(30% - 10px);
+    height: 36px;
   }
 
   &__submit,
@@ -101,7 +111,7 @@ textarea {
 }
 
 .chat__container .chat__bubble {
-  background-color: #bbdefb;
+  background-color: #2C2E30;
   padding: 20px;
   border-radius: 19.5px;
   max-width: 300px;
@@ -116,7 +126,7 @@ textarea {
 
 .chat__container .chat__bubble.current-user {
   margin-left: auto;
-  background-color: #a5d6a7;
+  background-color: #214822;
 }
 
 .form-control {
