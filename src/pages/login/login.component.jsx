@@ -90,7 +90,7 @@ export default class Login extends Component {
             ) : null}
             <button className="login__button login__button--submit" type="submit">Login</button>
           </div>
-          <p>You can also log in with any of these services</p>
+          <p>Or log in with</p>
           <button className="login__button login__button--google" type="button" onClick={this.googleSignIn}>
             <i class="fab fa-google"></i> Google
           </button>

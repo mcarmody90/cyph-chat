@@ -97,6 +97,10 @@
 
 @media screen and (max-width: 600px) {
   .login {
+    &__title {
+      margin-left: 0;
+    }
+
     &__form {
       padding: 10px;
     }
