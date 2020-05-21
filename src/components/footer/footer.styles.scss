@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+  height: 5vh;
+
+  &__container {
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
