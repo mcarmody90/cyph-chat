@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cyph-chat/precache-manifest.b00e003f147e16ea27c50ad114e56604.js"
+  "/cyph-chat/precache-manifest.b744228174f6f86e590413db5d449599.js"
 );
 
 self.addEventListener('message', (event) => {

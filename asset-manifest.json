@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/cyph-chat/static/css/main.484e669a.chunk.css",
-    "main.js": "/cyph-chat/static/js/main.cc3d69b7.chunk.js",
-    "main.js.map": "/cyph-chat/static/js/main.cc3d69b7.chunk.js.map",
+    "main.css": "/cyph-chat/static/css/main.4bf713b3.chunk.css",
+    "main.js": "/cyph-chat/static/js/main.cf031291.chunk.js",
+    "main.js.map": "/cyph-chat/static/js/main.cf031291.chunk.js.map",
     "runtime-main.js": "/cyph-chat/static/js/runtime-main.cdf13ab6.js",
     "runtime-main.js.map": "/cyph-chat/static/js/runtime-main.cdf13ab6.js.map",
     "static/js/2.9e911c77.chunk.js": "/cyph-chat/static/js/2.9e911c77.chunk.js",
     "static/js/2.9e911c77.chunk.js.map": "/cyph-chat/static/js/2.9e911c77.chunk.js.map",
     "index.html": "/cyph-chat/index.html",
-    "precache-manifest.b00e003f147e16ea27c50ad114e56604.js": "/cyph-chat/precache-manifest.b00e003f147e16ea27c50ad114e56604.js",
+    "precache-manifest.b744228174f6f86e590413db5d449599.js": "/cyph-chat/precache-manifest.b744228174f6f86e590413db5d449599.js",
     "service-worker.js": "/cyph-chat/service-worker.js",
-    "static/css/main.484e669a.chunk.css.map": "/cyph-chat/static/css/main.484e669a.chunk.css.map",
+    "static/css/main.4bf713b3.chunk.css.map": "/cyph-chat/static/css/main.4bf713b3.chunk.css.map",
     "static/js/2.9e911c77.chunk.js.LICENSE.txt": "/cyph-chat/static/js/2.9e911c77.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.cdf13ab6.js",
     "static/js/2.9e911c77.chunk.js",
-    "static/css/main.484e669a.chunk.css",
-    "static/js/main.cc3d69b7.chunk.js"
+    "static/css/main.4bf713b3.chunk.css",
+    "static/js/main.cf031291.chunk.js"
   ]
 }
