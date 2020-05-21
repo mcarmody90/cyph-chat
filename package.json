@@ -17,6 +17,7 @@
   },
   "scripts": {
     "homepage": "https://mcarmody90.github.io/cyph-chat/",
+    "predeploy": "yarn build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
